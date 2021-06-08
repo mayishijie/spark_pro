@@ -6,7 +6,13 @@
 
     <groupId>com.mayishijie</groupId>
     <artifactId>spark_pro</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spark_offline</module>
+        <module>spark_online</module>
+        <module>spark_core</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
