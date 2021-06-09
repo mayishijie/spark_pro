@@ -12,6 +12,8 @@
         <module>spark_offline</module>
         <module>spark_online</module>
         <module>spark_core</module>
+        <module>spark_sql</module>
+        <module>spark_streaming</module>
     </modules>
 
     <properties>
