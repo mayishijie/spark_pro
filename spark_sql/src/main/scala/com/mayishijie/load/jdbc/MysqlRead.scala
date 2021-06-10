@@ -33,6 +33,7 @@ object MysqlRead {
       .load().show()
   }
 
+  /**通过配置properties文件*/
   def method2(spark:SparkSession): Unit = {
     val properties = new Properties()
     properties.put(Constants.user_key, Constants.user)
@@ -45,6 +46,7 @@ object MysqlRead {
 
   }
 
+  /**map参数*/
   def method3(spark:SparkSession): Unit ={
     spark.read.format("jdbc")
       .options(Map(Constants.url_key->(Constants.url+"?"+Constants.user_key+"="+Constants.user+"&"+Constants.password_key+"="+Constants.password),
