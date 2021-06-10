@@ -12,4 +12,9 @@ object Constants {
   val FORMAT_JSON = "json"
   val FORMAT_CSV = "csv"
 
+
+  def sleep():Unit={
+    Thread.sleep(1000000)
+  }
+
 }

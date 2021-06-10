@@ -31,8 +31,11 @@ object DataFrameTempView {
 
   /**DSL风格查询,无需创建临时视图,可以直接使用*/
   def styleForDSL(df:DataFrame):Unit={
-    df.select("name","age").show() //指定列查询
+    //df.select("name","age").show() //指定列查询
+
+    //df.groupBy("age").count().show()
   }
+
 
 
 }
