@@ -42,6 +42,7 @@ object Constants {
   def setSystemConfig():Unit={
     System.setProperty("HADOOP_USER_NAME","mayi")
     System.setProperty("HADOOP_USER_PASSWORD","mayi")
+
   }
 
 }
