@@ -38,4 +38,10 @@ object Constants {
     Thread.sleep(1000000)
   }
 
+
+  def setSystemConfig():Unit={
+    System.setProperty("HADOOP_USER_NAME","mayi")
+    System.setProperty("HADOOP_USER_PASSWORD","mayi")
+  }
+
 }
