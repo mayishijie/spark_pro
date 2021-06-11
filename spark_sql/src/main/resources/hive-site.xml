@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://mayi101:3306/hive?createDatabaseIfNotExist=true&amp;useSSL=false</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>root</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>root</value>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/other/warehouse</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.schema.verification</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://mayi101:9083</value>
+    </property>
+
+    <property>
+        <name>hive.server2.thrift.port</name>
+        <value>10000</value>
+    </property>
+
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>mayi101</value>
+    </property>
+
+    <property>
+        <name>hive.metastore.event.db.notification.api.auth</name>
+        <value>false</value>
+    </property>
+    <!--<property>-->
+    <!--    <name>hive.exec.scratchdir</name>-->
+    <!--    <value>/other/tmp</value>-->
+    <!--</property>-->
+    <!--<property>-->
+    <!--    <name>hive.querylog.location</name>-->
+    <!--    <value>/other/log</value>-->
+    <!--</property>-->
+    <property>
+        <name>yarn.app.mapreduce.am.command-opts</name>
+        <value>-Djava.net.preferIPv4Stack=true -Xmx500m</value>
+    </property>
+    <property>
+        <name>mapreduce.map.java.opts</name>
+        <value>-Djava.net.preferIPv4Stack=true -Xmx500m</value>
+    </property>
+    <property>
+        <name>mapreduce.reduce.java.opts</name>
+        <value>-Djava.net.preferIPv4Stack=true -Xmx500m</value>
+    </property>
+
+    <!-- 设置表头显示和数据库显示  -->
+    <property>
+        <name>hive.cli.print.header</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hive.cli.print.current.db</name>
+        <value>true</value>
+    </property>
+</configuration>
