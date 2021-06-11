@@ -1,0 +1,1 @@
+-- create database gmall if not exists;
